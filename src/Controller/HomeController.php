@@ -9,9 +9,9 @@ use Symfony\Component\Routing\Annotation\Route;
 class HomeController extends AbstractController
 {
     /**
-     * @Route("{_locale}", name="homepage")
+     * @Route("{_locale}/", name="homepage")
      */
-    public function index(): Response
+    public function indexAction(): Response
     {
         return $this->render('home/index.html.twig');
     }

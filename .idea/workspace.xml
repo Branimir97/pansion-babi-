@@ -5,35 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0fb8695-58dd-4618-9bf0-18a18c908970" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/booking.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/gallery.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/gallery.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/desk.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/booking/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/booking/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/gallery/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/gallery/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/footer.de.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/translations/footer.de.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/footer.en.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/translations/footer.en.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/footer.hr.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/translations/footer.hr.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/footer.it.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/translations/footer.it.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/gallery.de.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/translations/gallery.de.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/gallery.en.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/translations/gallery.en.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/gallery.hr.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/translations/gallery.hr.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/gallery.it.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/translations/gallery.it.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/homepage.de.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/translations/homepage.de.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/homepage.en.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/translations/homepage.en.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/homepage.hr.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/translations/homepage.hr.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/homepage.it.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/translations/homepage.it.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/navigation.de.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/translations/navigation.de.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/navigation.en.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/translations/navigation.en.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/navigation.hr.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/translations/navigation.hr.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/translations/navigation.it.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/translations/navigation.it.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BookingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BookingController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +201,7 @@
       <workItem from="1631301519689" duration="1999000" />
       <workItem from="1631347808445" duration="15781000" />
       <workItem from="1631365335002" duration="1636000" />
-      <workItem from="1631372351013" duration="5757000" />
+      <workItem from="1631372351013" duration="8135000" />
     </task>
     <servers />
   </component>

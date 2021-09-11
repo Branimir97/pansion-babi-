@@ -7,7 +7,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @Route("/gallery/{_locale}")
+ * @Route("{_locale}/gallery")
  */
 class GalleryController extends AbstractController
 {
