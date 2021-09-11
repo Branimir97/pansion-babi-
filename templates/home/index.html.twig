@@ -10,14 +10,14 @@
 
 {% block body %}
         <h1 class="text-center bg-light p-2">
-            {{ 'welcome'|trans({}, 'homepage')}}
             <span class="upper">
-            {{ 'welcome2'|trans({}, 'homepage')}}
+                {{ 'welcome'|trans({}, 'homepage')}}
             </span>
+            <img id="logo" src="{{ asset('icons/logo.png') }}" alt="logo">
         </h1>
-
-
-    <div class="img-wrapper">
-        <img src="" alt="">
-    </div>
+        <div class="container text-center">
+            <div class="img-wrapper">
+                <img src="{{ asset('images/slika_8.jpg') }}" alt="">
+            </div>
+        </div>
 {% endblock %}

@@ -9,11 +9,16 @@ img#logo {
     height: 50px;
 }
 
+#logo_footer {
+    width: 30px;
+    height: 27px;
+}
+
 .upper {
     text-transform: uppercase;
 }
 
-.nav_icon{
+.nav_icon {
     width: 20px;
     height: 20px;
 }
@@ -22,7 +27,6 @@ footer {
     padding: 5px;
     width: 100%;
 }
-
 
 footer img {
     width: 200px;
@@ -46,7 +50,6 @@ iframe {
     height: 250px;
 }
 
-/* Mobile L */
 @media screen and (min-width: 768px) {
     footer {
         padding: 30px;
