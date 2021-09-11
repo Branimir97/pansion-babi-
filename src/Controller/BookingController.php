@@ -39,7 +39,7 @@ class BookingController extends AbstractController
                     [], 'booking'));
 
             $email = (new TemplatedEmail())
-                ->to('branimirb51@gmail.com')
+                ->to('pansion.babic@gmail.com')
                 ->from($form->get('email')->getData())
                 ->subject('Novi upit')
                 ->context([
@@ -52,10 +52,9 @@ class BookingController extends AbstractController
                     'createdAt' => $booking->getCreatedAt()
                 ])
                 ->htmlTemplate('email/new_inquirie.html.twig');
-            $mailer->send($email);
-//            try {
-//                $mailer->send($email);
-//            } catch (TransportExceptionInterface $exception) {}
+            try {
+                $mailer->send($email);
+            } catch (TransportExceptionInterface $exception) {}
             return $this->redirectToRoute('booking');
         }
         return $this->renderForm('booking/index.html.twig', [
