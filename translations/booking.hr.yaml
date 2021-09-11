@@ -1,0 +1,12 @@
+title: Upit za rezervaciju
+heading: Novi upit za rezervaciju
+form:
+  name_label: Ime
+  surname_label: Prezime
+  phoneNumber_label: Broj telefona
+  email_label: E-mail
+  startDate_label: Početni datum
+  endDate_label: Krajnji datum
+  button_label: Pošalji upit
+flash_message:
+  inquirie_sent: Upit uspješno poslan. Kontaktirat ćemo Vas u najkraćem mogućem roku.

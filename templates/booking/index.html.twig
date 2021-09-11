@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ 'title'|trans({}, 'booking')}}
+{% endblock %}
+
+{% block body %}
+    <h2 class="text-center bg-light p-2">
+        {{ 'heading'|trans({}, 'booking')}}
+    </h2>
+
+    {{ include('booking/_form.html.twig') }}
+{% endblock %}

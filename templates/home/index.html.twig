@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ 'title'|trans({}, 'homepage')}}
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+{% endblock %}
+
+{% block body %}
+        <h1 class="text-center bg-light p-2">
+            {{ 'welcome'|trans({}, 'homepage')}}
+            <span class="upper">
+            {{ 'welcome2'|trans({}, 'homepage')}}
+            </span>
+        </h1>
+
+
+    <div class="img-wrapper">
+        <img src="" alt="">
+    </div>
+{% endblock %}

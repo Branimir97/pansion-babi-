@@ -1,0 +1,12 @@
+title: Prenotazione richiesta
+heading: Nuova richiesta di prenotazione
+form:
+  name_label: Nome
+  surname_label: Cognome
+  phoneNumber_label: Numero di telefono
+  email_label: E-mail
+  startDate_label: Data d'inizio
+  endDate_label: Data di fine
+  button_label: Invia una richiesta
+flash_message:
+  inquirie_sent: Richiesta inviata con successo. Ti contatteremo al più presto.

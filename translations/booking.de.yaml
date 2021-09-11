@@ -1,0 +1,12 @@
+title: Reservierungsanfrage
+heading: Neue Buchungsanfrage
+form:
+  name_label: Name
+  surname_label: Nachname
+  phoneNumber_label: Telefonnummer
+  email_label: E-mail
+  startDate_label: Startdatum
+  endDate_label: Enddatum
+  button_label: Eine Anfrage senden
+flash_message:
+  inquirie_sent: Anfrage erfolgreich gesendet. Wir werden Sie so schnell wie möglich kontaktieren.

@@ -1,0 +1,30 @@
+<div class="container">
+    {{ form_start(form) }}
+        <div class="row">
+            <div class="col-sm-6">
+                {{ form_row(form.name) }}
+            </div>
+            <div class="col-sm-6">
+                {{ form_row(form.surname) }}
+            </div>
+            <div class="col-sm-6">
+                {{ form_row(form.email) }}
+            </div>
+            <div class="col-sm-6">
+                {{ form_row(form.phoneNumber) }}
+            </div>
+            <div class="col-sm-6">
+                {{ form_row(form.startDate) }}
+            </div>
+            <div class="col-sm-6">
+                {{ form_row(form.endDate) }}
+            </div>
+        </div>
+        <div class="text-center mt-3 mb-3">
+            <button class="btn btn-outline-success">
+                {{ 'form.button_label'|trans({}, 'booking') }}
+            </button>
+        </div>
+    {{ form_end(form) }}
+</div>
+

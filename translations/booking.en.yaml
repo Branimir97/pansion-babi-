@@ -1,0 +1,12 @@
+title: Reservation request
+heading: New booking request
+form:
+  name_label: Name
+  surname_label: Surname
+  phoneNumber_label: Telephone number
+  email_label: E-mail
+  startDate_label: Start date
+  endDate_label: End date
+  button_label: Send a inquiry
+flash_message:
+  inquirie_sent: Inquiry sent successfully. We will contact you as soon as possible.
