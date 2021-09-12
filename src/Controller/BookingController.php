@@ -11,6 +11,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Validator\Constraints\DateTime;
 use Symfony\Contracts\Translation\TranslatorInterface;
 
 class BookingController extends AbstractController
@@ -51,13 +52,12 @@ class BookingController extends AbstractController
                     'phoneNumber' => $form->get('phoneNumber')->getData(),
                     'startDate' => $form->get('startDate')->getData(),
                     'endDate' => $form->get('endDate')->getData(),
-                    'createdAt' => $booking->getCreatedAt()
+                    'createdAt' => new DateTime("now")
                 ])
                 ->htmlTemplate('email/new_inquirie.html.twig');
-            $mailer->send($email);
-//            try {
-//                $mailer->send($email);
-//            } catch (TransportExceptionInterface $exception) {}
+            try {
+                $mailer->send($email);
+            } catch (TransportExceptionInterface $exception) {}
             return $this->redirectToRoute('booking');
         }
         return $this->renderForm('booking/index.html.twig', [
