@@ -6,13 +6,15 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-/**
- * @Route("{_locale}/gallery")
- */
 class GalleryController extends AbstractController
 {
     /**
-     * @Route(name="gallery")
+     * @Route({
+     *     "hr": "/galerija",
+     *     "en": "/gallery",
+     *     "it": "/galleria",
+     *     "de": "/galerie"
+     * }, name="gallery")
      */
     public function index(): Response
     {

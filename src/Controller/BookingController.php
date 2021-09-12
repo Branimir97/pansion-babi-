@@ -13,13 +13,15 @@ use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Contracts\Translation\TranslatorInterface;
 
-/**
- * @Route("/{_locale}/booking")
- */
 class BookingController extends AbstractController
 {
     /**
-     * @Route(name="booking", methods={"GET", "POST"})
+     * @Route({
+     *     "hr": "/rezervacije",
+     *     "en": "/booking",
+     *     "it": "/prenotazioni",
+     *     "de": "/reservierungen"
+     * }, name="booking", methods={"GET", "POST"})
      */
     public function index(Request $request,
                           TranslatorInterface $translator,
@@ -52,9 +54,10 @@ class BookingController extends AbstractController
                     'createdAt' => $booking->getCreatedAt()
                 ])
                 ->htmlTemplate('email/new_inquirie.html.twig');
-            try {
-                $mailer->send($email);
-            } catch (TransportExceptionInterface $exception) {}
+            $mailer->send($email);
+//            try {
+//                $mailer->send($email);
+//            } catch (TransportExceptionInterface $exception) {}
             return $this->redirectToRoute('booking');
         }
         return $this->renderForm('booking/index.html.twig', [

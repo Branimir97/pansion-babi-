@@ -9,7 +9,12 @@ use Symfony\Component\Routing\Annotation\Route;
 class HomeController extends AbstractController
 {
     /**
-     * @Route("{_locale}/", name="homepage")
+     * @Route({
+     *     "hr": "/",
+     *     "en": "/homepage",
+     *     "it": "/prima-pagina",
+     *     "de": "/titleseite"
+     *  }, name="homepage")
      */
     public function indexAction(): Response
     {
