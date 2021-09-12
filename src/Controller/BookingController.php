@@ -52,7 +52,7 @@ class BookingController extends AbstractController
                     'phoneNumber' => $form->get('phoneNumber')->getData(),
                     'startDate' => $form->get('startDate')->getData(),
                     'endDate' => $form->get('endDate')->getData(),
-                    'createdAt' => new DateTime("now")
+                    'createdAt' => $booking->getCreatedAt()
                 ])
                 ->htmlTemplate('email/new_inquirie.html.twig');
             try {
