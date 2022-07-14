@@ -11,5 +11,5 @@ redirect:
     path: /
     controller: App\Controller\HomeController::indexAction
     defaults:
-        path: /hr
+        path: '/%locale%'
         permanent: true
