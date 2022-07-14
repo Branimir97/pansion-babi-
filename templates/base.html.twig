@@ -46,16 +46,8 @@
 
     {% include 'navigation/nav.html.twig' %}
 
-    {% for message in app.flashes('success') %}
-        <div class="alert alert-success text-center mb-0">
-            {{ message }}
-        </div>
-    {% endfor %}
-    {% for message in app.flashes('danger') %}
-        <div class="alert alert-danger text-center mb-0">
-            {{ message }}
-        </div>
-    {% endfor %}
+    {% include 'flash_messages/flash_messages.html.twig' %}
+
     <body>
         {% block body %}{% endblock %}
     </body>
