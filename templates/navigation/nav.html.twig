@@ -1,0 +1,72 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand upper" href="{{ path('homepage') }}">
+        <img class="mr-2" id="logo"
+             src="{{ asset('icons/logo.png') }}" alt="logo">
+        {{ 'navbar-brand'|trans({}, 'navigation') }}
+    </a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item upper">
+                <a class="nav-link" href="{{ path('gallery') }}">
+                    {{ 'gallery'|trans({}, 'navigation') }}
+                </a>
+            </li>
+            <li class="nav-item upper">
+                <a class="nav-link" href="{{ path('booking') }}">
+                    {{ 'booking'|trans({}, 'navigation') }}
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                   role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <span class="upper" id="locale">{{ app.request.locale }}</span>
+                    <i id="language_icon" class="fas fa-globe"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                    <li>
+                        <a class="dropdown-item"
+                           href="{{ path(app.request.attributes.get('_route'),
+                               app.request.attributes.get('_route_params')|merge({'_locale': 'hr'})) }}">
+                            <img class="nav_icon mr-1"
+                                 src="{{ asset('icons/croatia.png') }}" alt="icon">
+                            {{ 'croatian'|trans({}, 'navigation') }}
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item"
+                           href="{{ path(app.request.attributes.get('_route'),
+                               app.request.attributes.get('_route_params')|merge({'_locale': 'en'})) }}">
+                            <img class="nav_icon mr-1"
+                                 src="{{ asset('icons/united-kingdom.png') }}" alt="icon">
+                            {{ 'english'|trans({}, 'navigation') }}
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item"
+                           href="{{ path(app.request.attributes.get('_route'),
+                               app.request.attributes.get('_route_params')|merge({'_locale': 'it'})) }}">
+                            <img class="nav_icon mr-1"
+                                 src="{{ asset('icons/italy.png') }}" alt="icon">
+                            {{ 'italian'|trans({}, 'navigation') }}
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item"
+                           href="{{ path(app.request.attributes.get('_route'),
+                               app.request.attributes.get('_route_params')|merge({'_locale': 'de'})) }}">
+                            <img class="nav_icon mr-1"
+                                 src="{{ asset('icons/germany.png') }}" alt="icon">
+                            {{ 'german'|trans({}, 'navigation') }}
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
