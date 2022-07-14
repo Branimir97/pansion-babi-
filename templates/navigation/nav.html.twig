@@ -24,18 +24,54 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdown-language" role="button"
                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    {{ 'croatian'|trans({}, 'navigation') }}
+                    {% if app.request.locale is same as 'hr' %}
+                        <img class="nav_icon"
+                             src="{{ asset('icons/croatia.png') }}" alt="icon">
+                        {{ 'croatian'|trans({}, 'navigation') }}
+                    {% elseif  app.request.locale is same as 'en' %}
+                        <img class="nav_icon"
+                             src="{{ asset('icons/united-kingdom.png') }}" alt="icon">
+                        {{ 'english'|trans({}, 'navigation') }}
+                    {% elseif  app.request.locale is same as 'it' %}
+                        <img class="nav_icon"
+                             src="{{ asset('icons/italy.png') }}" alt="icon">
+                        {{ 'italian'|trans({}, 'navigation') }}
+                    {% elseif  app.request.locale is same as 'de' %}
+                        <img class="nav_icon"
+                             src="{{ asset('icons/germany.png') }}" alt="icon">
+                        {{ 'german'|trans({}, 'navigation') }}
+                    {% endif %}
                 </a>
                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-language">
-                    <li><a class="dropdown-item" href="{{ path('homepage', {_locale: 'en'}) }}">
+                    <li>
+                        <a class="dropdown-item" href="{{ path('homepage', {_locale: 'hr'}) }}">
+                            <img class="nav_icon"
+                                 src="{{ asset('icons/croatia.png') }}" alt="icon">
+                            {{ 'croatian'|trans({}, 'navigation') }}
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="{{ path('homepage', {_locale: 'en'}) }}">
+                            <img class="nav_icon"
+                                 src="{{ asset('icons/united-kingdom.png') }}" alt="icon">
                             {{ 'english'|trans({}, 'navigation') }}
-                        </a></li>
-                    <li><a class="dropdown-item" href="{{ path('homepage', {_locale: 'en'}) }}">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="{{ path('homepage', {_locale: 'it'}) }}">
+                            <img class="nav_icon"
+                                 src="{{ asset('icons/italy.png') }}" alt="icon">
                             {{ 'italian'|trans({}, 'navigation') }}
-                        </a></li>
-                    <li><a class="dropdown-item" href="{{ path('homepage', {_locale: 'en'}) }}">
+                        </a>
+                    </li>
+                    <li>
+
+                        <a class="dropdown-item" href="{{ path('homepage', {_locale: 'de'}) }}">
+                            <img class="nav_icon"
+                                 src="{{ asset('icons/germany.png') }}" alt="icon">
                             {{ 'german'|trans({}, 'navigation') }}
-                        </a></li>
+                        </a>
+                    </li>
                 </ul>
             </li>
         </ul>
