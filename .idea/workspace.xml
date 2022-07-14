@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c0fb8695-58dd-4618-9bf0-18a18c908970" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/translation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/footer/footer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer/footer.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Subscriber/LocaleSubcsriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Subscriber/LocaleSubcsriber.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +197,7 @@
     "last_opened_file_path": "C:/Users/brani/PhpstormProjects/Privatno/pansion-babic/public/images",
     "nodejs_package_manager_path": "npm",
     "php.override.implement.member.chooser.php.doc": "NONE",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -236,7 +235,7 @@
       <workItem from="1657646108780" duration="672000" />
       <workItem from="1657689093634" duration="11000" />
       <workItem from="1657811093866" duration="251000" />
-      <workItem from="1657811353336" duration="5619000" />
+      <workItem from="1657811353336" duration="6589000" />
     </task>
     <servers />
   </component>

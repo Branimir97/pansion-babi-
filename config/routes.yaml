@@ -1,9 +1,4 @@
 controllers:
     resource: ../src/Controller/
     type: attribute
-
-home:
-    path: /{_locale}
-    controller: App\Controller\HomeController::index
-    requirements:
-        _locale: hr|en|de|it
+    prefix: /{_locale}
