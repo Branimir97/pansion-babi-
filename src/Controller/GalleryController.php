@@ -8,14 +8,6 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class GalleryController extends AbstractController
 {
-//    /**
-//     * @Route({
-//     *     "hr": "/galerija",
-//     *     "en": "/gallery",
-//     *     "it": "/galleria",
-//     *     "de": "/galerie"
-//     * }, name="gallery")
-//     */
     #[Route("/gallery", name: "gallery")]
     public function index(): Response
     {
