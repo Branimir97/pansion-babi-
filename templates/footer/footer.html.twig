@@ -4,7 +4,7 @@
             <div class="col-sm-4 my-auto">
                 <img src="{{ asset('icons/logo.png') }}" alt="logo"><br>
                 <i>
-                    {{ 'copyright'|trans({}, 'footer')}}
+                    {{ 'copyright'|trans({}, 'footer')}} © {{ "now"|date("Y") }}.
                 </i><br>
                 <div class="icons mt-2 mb-2">
                     <img id="logo_footer" src="{{ asset('icons/parking.png') }}" alt="logo_parking">
@@ -47,18 +47,10 @@
                        target="_blank" title="Facebook">
                         <i class="fab fa-facebook mr-2"></i>
                     </a>
-                    {#                        <a href="https://www.instagram.com/pansion_babic.201/"#}
-                    {#                           target="_blank" title="Instagram">#}
-                    {#                            <i class="fab fa-instagram"></i>#}
-                    {#                        </a>#}
                 </div>
             </div>
             <div class="col-sm-4">
                 <iframe width="400px" height="300px"
-                        frameborder="0"
-                        scrolling="no"
-                        marginheight="0"
-                        marginwidth="0"
                         id="gmap_canvas"
                         src="https://maps.google.com/maps?width=400&amp;height=300&amp;hl=en&amp;q=Kralja%20Tomislava%20201%20Novska+(Pansion%20Babi%C4%87)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
                 <a href='https://www.symptoma.hr/hr/info/covid-19#info'>Coronavirus symptom</a>
