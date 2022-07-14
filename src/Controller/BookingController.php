@@ -16,14 +16,14 @@ use Symfony\Contracts\Translation\TranslatorInterface;
 
 class BookingController extends AbstractController
 {
-    /**
-     * @Route({
-     *     "hr": "/rezervacije",
-     *     "en": "/booking",
-     *     "it": "/prenotazioni",
-     *     "de": "/reservierungen"
-     * }, name="booking", methods={"GET", "POST"})
-     */
+//    /**
+//     * @Route({
+//     *     "hr": "/rezervacije",
+//     *     "en": "/booking",
+//     *     "it": "/prenotazioni",
+//     *     "de": "/reservierungen"
+//     * }, name="booking", methods={"GET", "POST"})
+//     */
     public function index(Request $request,
                           TranslatorInterface $translator,
                           MailerInterface $mailer): Response

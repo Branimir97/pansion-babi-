@@ -8,14 +8,14 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class GalleryController extends AbstractController
 {
-    /**
-     * @Route({
-     *     "hr": "/galerija",
-     *     "en": "/gallery",
-     *     "it": "/galleria",
-     *     "de": "/galerie"
-     * }, name="gallery")
-     */
+//    /**
+//     * @Route({
+//     *     "hr": "/galerija",
+//     *     "en": "/gallery",
+//     *     "it": "/galleria",
+//     *     "de": "/galerie"
+//     * }, name="gallery")
+//     */
     public function index(): Response
     {
         return $this->render('gallery/index.html.twig');
