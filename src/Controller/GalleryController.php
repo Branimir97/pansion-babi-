@@ -16,6 +16,7 @@ class GalleryController extends AbstractController
 //     *     "de": "/galerie"
 //     * }, name="gallery")
 //     */
+    #[Route("/gallery", name: "gallery")]
     public function index(): Response
     {
         return $this->render('gallery/index.html.twig');

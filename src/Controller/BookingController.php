@@ -24,6 +24,7 @@ class BookingController extends AbstractController
 //     *     "de": "/reservierungen"
 //     * }, name="booking", methods={"GET", "POST"})
 //     */
+    #[Route("/booking", name: "booking")]
     public function index(Request $request,
                           TranslatorInterface $translator,
                           MailerInterface $mailer): Response

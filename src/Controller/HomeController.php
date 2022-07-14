@@ -16,7 +16,7 @@ class HomeController extends AbstractController
 //     *     "de": "/titleseite"
 //     *  }, name="homepage")
 //     */
-    #[Route("/")]
+    #[Route("/", name: "homepage")]
     public function indexAction(): Response
     {
         return $this->render('home/index.html.twig');
