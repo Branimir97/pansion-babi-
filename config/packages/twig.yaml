@@ -1,6 +1,9 @@
 twig:
     default_path: '%kernel.project_dir%/templates'
     form_themes: ['bootstrap_4_layout.html.twig']
+    globals:
+        protocol: 'https://'
+        prod_url: '/pansion-babic.hr'
 
 when@test:
     twig:
