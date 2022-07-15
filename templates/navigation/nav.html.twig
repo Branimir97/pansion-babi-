@@ -44,21 +44,21 @@
                 </a>
                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-language">
                     <li>
-                        <a class="dropdown-item" href="{{ path('homepage', {_locale: 'hr'}) }}">
+                        <a class="dropdown-item" href="{{ path(app.request.attributes.get('_route'), {_locale: 'hr'}) }}">
                             <img class="nav_icon"
                                  src="{{ asset('icons/croatia.png') }}" alt="icon">
                             {{ 'croatian'|trans({}, 'navigation') }}
                         </a>
                     </li>
                     <li>
-                        <a class="dropdown-item" href="{{ path('homepage', {_locale: 'en'}) }}">
+                        <a class="dropdown-item" href="{{ path(app.request.attributes.get('_route'), {_locale: 'en'}) }}">
                             <img class="nav_icon"
                                  src="{{ asset('icons/united-kingdom.png') }}" alt="icon">
                             {{ 'english'|trans({}, 'navigation') }}
                         </a>
                     </li>
                     <li>
-                        <a class="dropdown-item" href="{{ path('homepage', {_locale: 'it'}) }}">
+                        <a class="dropdown-item" href="{{ path(app.request.attributes.get('_route'), {_locale: 'it'}) }}">
                             <img class="nav_icon"
                                  src="{{ asset('icons/italy.png') }}" alt="icon">
                             {{ 'italian'|trans({}, 'navigation') }}
@@ -66,7 +66,7 @@
                     </li>
                     <li>
 
-                        <a class="dropdown-item" href="{{ path('homepage', {_locale: 'de'}) }}">
+                        <a class="dropdown-item" href="{{ path(app.request.attributes.get('_route'), {_locale: 'de'}) }}">
                             <img class="nav_icon"
                                  src="{{ asset('icons/germany.png') }}" alt="icon">
                             {{ 'german'|trans({}, 'navigation') }}

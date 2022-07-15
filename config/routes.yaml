@@ -12,4 +12,4 @@ redirect:
     controller: App\Controller\HomeController::indexAction
     defaults:
         path: '/%locale%'
-        permanent: true
+        permanent: false
