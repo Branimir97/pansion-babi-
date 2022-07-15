@@ -13,10 +13,13 @@
     {% else %}
         {% set route = "" %}
     {% endif %}
+
     <link rel="alternate" href="{{ host }}/hr/{{ route }}" hreflang="hr"/>
     <link rel="alternate" href="{{ host }}/en/{{ route }}" hreflang="en-gb"/>
     <link rel="alternate" href="{{ host }}/it/{{ route }}" hreflang="it"/>
     <link rel="alternate" href="{{ host }}/de/{{ route }}" hreflang="de"/>
+
+    <link rel="canonical" href="{{ host }}/{{ app.request.locale }}/{{ route }}" hreflang="hr"/>
 
     <script src="https://kit.fontawesome.com/4bb6aa68af.js" crossorigin="anonymous"></script>
 
