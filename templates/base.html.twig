@@ -7,10 +7,16 @@
 
     {% block meta %}{% endblock %}
 
-    <link rel="alternate" href="{{ app.request.schemeAndHttpHost }}" hreflang="hr"/>
-    <link rel="alternate" href="{{ app.request.schemeAndHttpHost }}" hreflang="en-gb"/>
-    <link rel="alternate" href="{{ app.request.schemeAndHttpHost }}" hreflang="it"/>
-    <link rel="alternate" href="{{ app.request.schemeAndHttpHost }}" hreflang="de"/>
+    {% set host = app.request.schemeAndHttpHost %}
+    {% if app.request.attributes.get('_route') is not same as 'homepage' %}
+        {% set route = app.request.attributes.get('_route') %}
+    {% else %}
+        {% set route = "" %}
+    {% endif %}
+    <link rel="alternate" href="{{ host }}/hr/{{ route }}" hreflang="hr"/>
+    <link rel="alternate" href="{{ host }}/en/{{ route }}" hreflang="en-gb"/>
+    <link rel="alternate" href="{{ host }}/it/{{ route }}" hreflang="it"/>
+    <link rel="alternate" href="{{ host }}/de/{{ route }}" hreflang="de"/>
 
     <script src="https://kit.fontawesome.com/4bb6aa68af.js" crossorigin="anonymous"></script>
 

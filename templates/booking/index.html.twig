@@ -1,17 +1,16 @@
 {% extends 'base.html.twig' %}
 
 {% block meta %}
-<meta name="description"
-      content="Rezervirajte smještaj s polupansionom ili punim pansionom putem jednostavnog obrasca.">
+    <meta name="description" content="Rezervirajte smještaj s polupansionom ili punim pansionom putem jednostavnog obrasca.">
 {% endblock %}
 
 {% block title %}
-    {{ 'title'|trans({}, 'booking')}}
+    {{ 'title'|trans({}, 'booking') }}
 {% endblock %}
 
 {% block body %}
     <h2 class="text-center bg-light p-2 mb-3">
-        {{ 'heading'|trans({}, 'booking')}}
+        {{ 'heading'|trans({}, 'booking') }}
         <img id="logo" src="{{ asset('icons/booking.png') }}" alt="logo">
     </h2>
     {{ include('booking/_form.html.twig') }}
