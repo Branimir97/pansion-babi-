@@ -53,8 +53,7 @@ class BookingType extends AbstractType
                 'widget' => 'single_text',
                 'label' => 'form.endDate_label',
                 'translation_domain' => 'booking'
-            ])
-        ;
+            ]);
     }
 
     public function configureOptions(OptionsResolver $resolver)

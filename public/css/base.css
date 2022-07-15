@@ -42,7 +42,7 @@ footer .heading {
 }
 
 .icons i {
-  font-size: 25px;
+    font-size: 25px;
 }
 
 iframe {
@@ -54,6 +54,7 @@ iframe {
     footer {
         padding: 30px;
     }
+
     iframe {
         width: 100%;
         height: 250px;

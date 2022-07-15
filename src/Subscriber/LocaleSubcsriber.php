@@ -19,15 +19,14 @@ class LocaleSubcsriber implements EventSubscriberInterface
     {
         $request = $event->getRequest();
 
-        if($request->hasPreviousSession()) {
+        if ($request->hasPreviousSession()) {
             return;
         }
 
         // try to see if the locale has been set as a _locale routing parameter
-        if($locale = $request->attributes->get('_locale')) {
+        if ($locale = $request->attributes->get('_locale')) {
             $request->getSession()->set('_locale', $locale);
-        }
-        // if no explicit locale has been set on this request, use one from the session
+        } // if no explicit locale has been set on this request, use one from the session
         else {
             $request->setLocale($request->getSession()->get('_locale', $this->defaultLocale));
         }

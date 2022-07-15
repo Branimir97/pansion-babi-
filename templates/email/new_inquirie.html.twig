@@ -1,55 +1,55 @@
 <!doctype html>
 <html lang="{{ app.request.locale }}">
 <body>
-    <h2>
-        Novi upit za rezervaciju - SOBE BABIĆ
-    </h2>
-    <div>
-        <h3>
-            <b>
-                Pojedinosti:
-            </b>
-        </h3>
-        <p>
-            Ime:
-            <b>
-                {{ name }}
-            </b>
-        </p>
-        <p>
-            Prezime:
-            <b>
-                {{ surname }}
-            </b>
-        </p>
-        <p>
-            Email adresa:
-            <b>
-                <a href="mailto:{{ email_address }}">
-                    {{ email_address }}
-                </a>
-            </b>
-        </p>
-        <p>
-            Kontakt broj telefona:
-            <b>
-                <a href="tel:{{ phoneNumber }}">
-                    {{ phoneNumber }}
-                </a>
-            </b>
-        </p>
-        <p>
-            Planirano vrijeme boravka:
-            <b>
-                {{ startDate|date('d.m.Y.') }} - {{ endDate|date('d.m.Y.') }}
-            </b>
-        </p>
-        <p>
-            Upit kreiran:
-            <b>
-                {{ createdAt|date('d.m.Y. || H:i:s') }}
-            </b>
-        </p>
-    </div>
+<h2>
+    Novi upit za rezervaciju - SOBE BABIĆ
+</h2>
+<div>
+    <h3>
+        <b>
+            Pojedinosti:
+        </b>
+    </h3>
+    <p>
+        Ime:
+        <b>
+            {{ name }}
+        </b>
+    </p>
+    <p>
+        Prezime:
+        <b>
+            {{ surname }}
+        </b>
+    </p>
+    <p>
+        Email adresa:
+        <b>
+            <a href="mailto:{{ email_address }}">
+                {{ email_address }}
+            </a>
+        </b>
+    </p>
+    <p>
+        Kontakt broj telefona:
+        <b>
+            <a href="tel:{{ phoneNumber }}">
+                {{ phoneNumber }}
+            </a>
+        </b>
+    </p>
+    <p>
+        Planirano vrijeme boravka:
+        <b>
+            {{ startDate|date('d.m.Y.') }} - {{ endDate|date('d.m.Y.') }}
+        </b>
+    </p>
+    <p>
+        Upit kreiran:
+        <b>
+            {{ createdAt|date('d.m.Y. || H:i:s') }}
+        </b>
+    </p>
+</div>
 </body>
 </html>

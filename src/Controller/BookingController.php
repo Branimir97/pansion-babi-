@@ -18,9 +18,9 @@ class BookingController extends AbstractController
 {
     #[Route("/booking", name: "booking")]
     public function index(
-        Request $request,
-        TranslatorInterface $translator,
-        MailerInterface $mailer,
+        Request                $request,
+        TranslatorInterface    $translator,
+        MailerInterface        $mailer,
         EntityManagerInterface $entityManager
     ): Response
     {
