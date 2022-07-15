@@ -7,7 +7,10 @@
 
     {% block meta %}{% endblock %}
 
-    {% block hreflang %}{% endblock %}
+    <link rel="alternate" href="{{ app.request.schemeAndHttpHost }}" hreflang="hr"/>
+    <link rel="alternate" href="{{ app.request.schemeAndHttpHost }}" hreflang="en-gb"/>
+    <link rel="alternate" href="{{ app.request.schemeAndHttpHost }}" hreflang="it"/>
+    <link rel="alternate" href="{{ app.request.schemeAndHttpHost }}" hreflang="de"/>
 
     <script src="https://kit.fontawesome.com/4bb6aa68af.js" crossorigin="anonymous"></script>
 
@@ -46,7 +49,7 @@
 {% include 'flash_messages/flash_messages.html.twig' %}
 
 <body>
-    {% block body %}{% endblock %}
+{% block body %}{% endblock %}
 </body>
 
 {% include 'footer/footer.html.twig' %}
