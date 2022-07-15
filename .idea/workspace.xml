@@ -5,30 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0fb8695-58dd-4618-9bf0-18a18c908970" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/public/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/booking.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/croatia.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/email.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/gallery.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/germany.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/italy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/parking.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/telephone.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/united-kingdom.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/warning.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/wi-fi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/BookingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BookingController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/BookingType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/BookingType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Subscriber/LocaleSubcsriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Subscriber/LocaleSubcsriber.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/booking/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/booking/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/booking/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/booking/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/email/new_inquirie.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/email/new_inquirie.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/footer/footer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer/footer.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/gallery/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/gallery/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/navigation/nav.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/navigation/nav.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
