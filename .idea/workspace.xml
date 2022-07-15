@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c0fb8695-58dd-4618-9bf0-18a18c908970" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/booking/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/booking/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/gallery/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/gallery/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +196,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/brani/PhpstormProjects/Privatno/pansion-babic/translations",
+    "last_opened_file_path": "C:/Users/brani/PhpstormProjects/Privatno/pansion-babic/public/images",
     "nodejs_package_manager_path": "npm",
     "php.override.implement.member.chooser.php.doc": "NONE",
     "settings.editor.selected.configurable": "preferences.pluginManager",
@@ -205,11 +205,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\brani\PhpstormProjects\Privatno\pansion-babic\translations" />
       <recent name="C:\Users\brani\PhpstormProjects\Privatno\pansion-babic\public\images" />
+      <recent name="C:\Users\brani\PhpstormProjects\Privatno\pansion-babic\translations" />
       <recent name="$PROJECT_DIR$/public/icons" />
       <recent name="$PROJECT_DIR$/translations" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\brani\PhpstormProjects\Privatno\pansion-babic\public\images\gallery" />
     </key>
   </component>
   <component name="RunManager">
