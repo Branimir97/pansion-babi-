@@ -1,8 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block meta %}
-<meta name="description"
-      content="Galerija fotografija Pansiona Babić - Novska.">
+<meta name="description" content="{{ 'gallery'|trans({}, 'meta_description')|raw}}">
 {% endblock %}
 
 {% block title %}
