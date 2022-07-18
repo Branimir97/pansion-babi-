@@ -18,14 +18,14 @@ class BookingType extends AbstractType
         $builder
             ->add('name', TextType::class, [
                 'attr' => [
-                    'placeholder' => 'e.g. Ivan'
+                    'placeholder' => 'e.g. Mario'
                 ],
                 'label' => 'form.name_label',
                 'translation_domain' => 'booking'
             ])
             ->add('surname', TextType::class, [
                 'attr' => [
-                    'placeholder' => 'e.g. Ivić'
+                    'placeholder' => 'e.g. Babić'
                 ],
                 'label' => 'form.surname_label',
                 'translation_domain' => 'booking'

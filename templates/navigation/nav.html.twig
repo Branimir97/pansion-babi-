@@ -7,7 +7,7 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <a class="navbar-brand upper" href="{{ path('homepage') }}">
                 <img class="mr-2" id="logo"
-                     src="{{ asset('icons/logo.png') }}" alt="logo">
+                     src="{{ asset('images/icons/logo.png') }}" alt="logo">
                 {{ 'navbar-brand'|trans({}, 'navigation') }}
             </a>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -27,19 +27,19 @@
                         aria-expanded="false">
                     {% if app.request.locale is same as 'hr' %}
                         <img class="nav_icon"
-                             src="{{ asset('icons/croatia.png') }}" alt="icon">
+                             src="{{ asset('images/icons/croatia.png') }}" alt="icon">
                         {{ 'croatian'|trans({}, 'navigation') }}
                     {% elseif  app.request.locale is same as 'en' %}
                         <img class="nav_icon"
-                             src="{{ asset('icons/united-kingdom.png') }}" alt="icon">
+                             src="{{ asset('images/icons/united-kingdom.png') }}" alt="icon">
                         {{ 'english'|trans({}, 'navigation') }}
                     {% elseif  app.request.locale is same as 'it' %}
                         <img class="nav_icon"
-                             src="{{ asset('icons/italy.png') }}" alt="icon">
+                             src="{{ asset('images/icons/italy.png') }}" alt="icon">
                         {{ 'italian'|trans({}, 'navigation') }}
                     {% elseif  app.request.locale is same as 'de' %}
                         <img class="nav_icon"
-                             src="{{ asset('icons/germany.png') }}" alt="icon">
+                             src="{{ asset('images/icons/germany.png') }}" alt="icon">
                         {{ 'german'|trans({}, 'navigation') }}
                     {% endif %}
                 </button>
@@ -48,14 +48,14 @@
                         <a class="dropdown-item"
                            href="{{ path(app.request.attributes.get('_route'), {_locale: 'hr'}) }}">
                             <img class="nav_icon"
-                                 src="{{ asset('icons/croatia.png') }}" alt="icon">
+                                 src="{{ asset('images/icons/croatia.png') }}" alt="icon">
                             {{ 'croatian'|trans({}, 'navigation') }}
                         </a>
                     <li>
                         <a class="dropdown-item"
                            href="{{ path(app.request.attributes.get('_route'), {_locale: 'en'}) }}">
                             <img class="nav_icon"
-                                 src="{{ asset('icons/united-kingdom.png') }}" alt="icon">
+                                 src="{{ asset('images/icons/united-kingdom.png') }}" alt="icon">
                             {{ 'english'|trans({}, 'navigation') }}
                         </a>
                     </li>
@@ -63,7 +63,7 @@
                         <a class="dropdown-item"
                            href="{{ path(app.request.attributes.get('_route'), {_locale: 'it'}) }}">
                             <img class="nav_icon"
-                                 src="{{ asset('icons/italy.png') }}" alt="icon">
+                                 src="{{ asset('images/icons/italy.png') }}" alt="icon">
                             {{ 'italian'|trans({}, 'navigation') }}
                         </a>
                     </li>
@@ -71,7 +71,7 @@
                         <a class="dropdown-item"
                            href="{{ path(app.request.attributes.get('_route'), {_locale: 'de'}) }}">
                             <img class="nav_icon"
-                                 src="{{ asset('icons/germany.png') }}" alt="icon">
+                                 src="{{ asset('images/icons/germany.png') }}" alt="icon">
                             {{ 'german'|trans({}, 'navigation') }}
                         </a>
                     </li>

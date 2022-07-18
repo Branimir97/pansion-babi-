@@ -5,30 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0fb8695-58dd-4618-9bf0-18a18c908970" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/public/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/booking.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/croatia.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/email.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/gallery.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/germany.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/italy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/parking.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/telephone.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/united-kingdom.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/warning.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/icons/wi-fi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/BookingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BookingController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/BookingType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/BookingType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Subscriber/LocaleSubcsriber.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Subscriber/LocaleSubcsriber.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/booking/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/booking/_form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/booking/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/booking/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/email/new_inquirie.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/email/new_inquirie.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/footer/footer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/footer/footer.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/gallery/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/gallery/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,18 +190,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/brani/PhpstormProjects/Privatno/pansion-babic/public/images",
-    "nodejs_package_manager_path": "npm",
-    "php.override.implement.member.chooser.php.doc": "NONE",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/brani/PhpstormProjects/Privatno/pansion-babic/public/images&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\brani\PhpstormProjects\Privatno\pansion-babic\public\images" />
@@ -233,6 +211,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\brani\PhpstormProjects\Privatno\pansion-babic\public\images\icons" />
       <recent name="C:\Users\brani\PhpstormProjects\Privatno\pansion-babic\public\images" />
       <recent name="C:\Users\brani\PhpstormProjects\Privatno\pansion-babic\public\images\gallery" />
     </key>
@@ -267,6 +246,13 @@
       <workItem from="1657861646524" duration="7000" />
       <workItem from="1657905194585" duration="83000" />
       <workItem from="1657905319781" duration="1042000" />
+      <workItem from="1657998488070" duration="2283000" />
+      <workItem from="1658000820266" duration="37000" />
+      <workItem from="1658121948419" duration="9000" />
+      <workItem from="1658125989487" duration="68000" />
+      <workItem from="1658126070182" duration="1912000" />
+      <workItem from="1658162946346" duration="157000" />
+      <workItem from="1658163113815" duration="2956000" />
     </task>
     <servers />
   </component>
