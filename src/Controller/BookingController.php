@@ -37,8 +37,7 @@ class BookingController extends AbstractController
                     [], 'booking'));
 
             $email = (new TemplatedEmail())
-//                ->to('pansion.babic@gmail.com')
-                ->to('branimirb51@gmail.com')
+                ->to('pansion.babic@gmail.com')
                 ->from($form->get('email')->getData())
                 ->subject('Novi upit')
                 ->context([
