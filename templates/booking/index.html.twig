@@ -1,13 +1,21 @@
 {% extends 'base.html.twig' %}
 
+{% block meta %}
+    <meta name="description" content="{{ 'booking'|trans({}, 'meta_description')|raw }}">
+{% endblock %}
+
 {% block title %}
-    {{ 'title'|trans({}, 'booking')}}
+    {{ 'title'|trans({}, 'booking') }}
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/booking.css') }}">
 {% endblock %}
 
 {% block body %}
-    <h2 class="text-center bg-light p-2 mb-3">
-        {{ 'heading'|trans({}, 'booking')}}
-        <img id="logo" src="{{ asset('icons/booking.png') }}" alt="logo">
-    </h2>
+    <h1 class="text-center bg-light p-2 mb-3">
+        {{ 'heading'|trans({}, 'booking') }}
+        <img id="logo" src="{{ asset('images/icons/booking.png') }}" alt="logo">
+    </h1>
     {{ include('booking/_form.html.twig') }}
 {% endblock %}

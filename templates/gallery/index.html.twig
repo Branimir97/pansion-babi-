@@ -1,11 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}
-    {{ 'title'|trans({}, 'gallery')}}
+{% block meta %}
+    <meta name="description" content="{{ 'gallery'|trans({}, 'meta_description')|raw }}">
 {% endblock %}
 
-{% block javascripts %}
-    <script src="{{ asset('js/script.js') }}"></script>
+{% block title %}
+    {{ 'title'|trans({}, 'gallery') }}
 {% endblock %}
 
 {% block stylesheets %}
@@ -13,193 +13,193 @@
 {% endblock %}
 
 {% block body %}
-    <h2 class="text-center bg-light p-2 mb-3">
-        {{ 'heading'|trans({}, 'gallery')}}
-        <img id="logo" src="{{ asset('icons/gallery.jpeg') }}" alt="logo">
-    </h2>
+    <h1 class="text-center bg-light p-2 mb-3">
+        {{ 'heading'|trans({}, 'gallery') }}
+        <img id="logo" src="{{ asset('images/icons/gallery.jpeg') }}" alt="logo">
+    </h1>
     <div class="container">
         <div class="row">
             <div class="col-sm-3 mb-2">
                 <div class="img-wrapper">
-                    <a href="{{ asset('images/slika_0.jpg') }}" target="_blank"
-                    title="{{ 'img_title'|trans({}, 'gallery')}}">
-                        <img src="{{ asset('images/slika_0.jpg') }}" alt="photo">
+                    <a href="{{ asset('images/gallery/image_0.jpg') }}" target="_blank"
+                       title="{{ 'img_title'|trans({}, 'gallery') }}">
+                        <img src="{{ asset('images/gallery/image_0.jpg') }}" alt="photo">
                     </a>
                 </div>
             </div>
             <div class="col-sm-3 mb-2">
                 <div class="img-wrapper">
-                    <a href="{{ asset('images/slika_2.jpg') }}" target="_blank"
-                       title="{{ 'img_title'|trans({}, 'gallery')}}">
-                        <img src="{{ asset('images/slika_2.jpg') }}" alt="photo">
+                    <a href="{{ asset('images/gallery/image_2.jpg') }}" target="_blank"
+                       title="{{ 'img_title'|trans({}, 'gallery') }}">
+                        <img src="{{ asset('images/gallery/image_2.jpg') }}" alt="photo">
                     </a>
                 </div>
             </div>
             <div class="col-sm-3 mb-2">
                 <div class="img-wrapper">
-                    <a href="{{ asset('images/slika_12.jpg') }}" target="_blank"
-                       title="{{ 'img_title'|trans({}, 'gallery')}}">
-                        <img src="{{ asset('images/slika_12.jpg') }}" alt="photo">
+                    <a href="{{ asset('images/gallery/image_12.jpg') }}" target="_blank"
+                       title="{{ 'img_title'|trans({}, 'gallery') }}">
+                        <img src="{{ asset('images/gallery/image_12.jpg') }}" alt="photo">
                     </a>
                 </div>
             </div>
             <div class="col-sm-3 mb-2">
                 <div class="img-wrapper">
-                    <a href="{{ asset('images/slika_17.jpg') }}" target="_blank"
-                       title="{{ 'img_title'|trans({}, 'gallery')}}">
-                        <img src="{{ asset('images/slika_17.jpg') }}" alt="photo">
+                    <a href="{{ asset('images/gallery/image_17.jpg') }}" target="_blank"
+                       title="{{ 'img_title'|trans({}, 'gallery') }}">
+                        <img src="{{ asset('images/gallery/image_17.jpg') }}" alt="photo">
                     </a>
                 </div>
             </div>
             <div class="col-sm-3 mb-2">
                 <div class="img-wrapper">
-                    <a href="{{ asset('images/slika_18.jpg') }}" target="_blank"
-                       title="{{ 'img_title'|trans({}, 'gallery')}}">
-                        <img src="{{ asset('images/slika_18.jpg') }}" alt="photo">
+                    <a href="{{ asset('images/gallery/image_18.jpg') }}" target="_blank"
+                       title="{{ 'img_title'|trans({}, 'gallery') }}">
+                        <img src="{{ asset('images/gallery/image_18.jpg') }}" alt="photo">
                     </a>
                 </div>
             </div>
             <div class="col-sm-3 mb-2">
                 <div class="img-wrapper">
-                    <a href="{{ asset('images/slika_21.jpg') }}" target="_blank"
-                       title="{{ 'img_title'|trans({}, 'gallery')}}">
-                        <img src="{{ asset('images/slika_21.jpg') }}" alt="photo">
+                    <a href="{{ asset('images/gallery/image_21.jpg') }}" target="_blank"
+                       title="{{ 'img_title'|trans({}, 'gallery') }}">
+                        <img src="{{ asset('images/gallery/image_21.jpg') }}" alt="photo">
                     </a>
                 </div>
             </div>
             <div class="col-sm-3 mb-2">
                 <div class="img-wrapper">
-                    <a href="{{ asset('images/slika_26.jpg') }}" target="_blank"
-                       title="{{ 'img_title'|trans({}, 'gallery')}}">
-                        <img src="{{ asset('images/slika_26.jpg') }}" alt="photo">
+                    <a href="{{ asset('images/gallery/image_26.jpg') }}" target="_blank"
+                       title="{{ 'img_title'|trans({}, 'gallery') }}">
+                        <img src="{{ asset('images/gallery/image_26.jpg') }}" alt="photo">
                     </a>
                 </div>
             </div>
             <div class="col-sm-3 mb-2">
                 <div class="img-wrapper">
-                    <a href="{{ asset('images/slika_30.jpg') }}" target="_blank"
-                       title="{{ 'img_title'|trans({}, 'gallery')}}">
-                        <img src="{{ asset('images/slika_30.jpg') }}" alt="photo">
+                    <a href="{{ asset('images/gallery/image_30.jpg') }}" target="_blank"
+                       title="{{ 'img_title'|trans({}, 'gallery') }}">
+                        <img src="{{ asset('images/gallery/image_30.jpg') }}" alt="photo">
                     </a>
                 </div>
             </div>
             <div class="col-sm-3 mb-2">
                 <div class="img-wrapper">
-                    <a href="{{ asset('images/slika_37.jpg') }}" target="_blank"
-                       title="{{ 'img_title'|trans({}, 'gallery')}}">
-                        <img src="{{ asset('images/slika_37.jpg') }}" alt="photo">
+                    <a href="{{ asset('images/gallery/image_37.jpg') }}" target="_blank"
+                       title="{{ 'img_title'|trans({}, 'gallery') }}">
+                        <img src="{{ asset('images/gallery/image_37.jpg') }}" alt="photo">
                     </a>
                 </div>
             </div>
             <div class="col-sm-3 mb-2">
                 <div class="img-wrapper">
-                    <a href="{{ asset('images/slika_39.jpg') }}" target="_blank"
-                       title="{{ 'img_title'|trans({}, 'gallery')}}">
-                        <img src="{{ asset('images/slika_39.jpg') }}" alt="photo">
+                    <a href="{{ asset('images/gallery/image_39.jpg') }}" target="_blank"
+                       title="{{ 'img_title'|trans({}, 'gallery') }}">
+                        <img src="{{ asset('images/gallery/image_39.jpg') }}" alt="photo">
                     </a>
                 </div>
             </div>
             <div class="col-sm-3 mb-2">
                 <div class="img-wrapper">
-                    <a href="{{ asset('images/slika_40.jpg') }}" target="_blank"
-                       title="{{ 'img_title'|trans({}, 'gallery')}}">
-                        <img src="{{ asset('images/slika_40.jpg') }}" alt="photo">
+                    <a href="{{ asset('images/gallery/image_40.jpg') }}" target="_blank"
+                       title="{{ 'img_title'|trans({}, 'gallery') }}">
+                        <img src="{{ asset('images/gallery/image_40.jpg') }}" alt="photo">
                     </a>
                 </div>
             </div>
             <div class="col-sm-3 mb-2">
                 <div class="img-wrapper">
-                    <a href="{{ asset('images/slika_43.jpg') }}" target="_blank"
-                       title="{{ 'img_title'|trans({}, 'gallery')}}">
-                        <img src="{{ asset('images/slika_43.jpg') }}" alt="photo">
+                    <a href="{{ asset('images/gallery/image_43.jpg') }}" target="_blank"
+                       title="{{ 'img_title'|trans({}, 'gallery') }}">
+                        <img src="{{ asset('images/gallery/image_43.jpg') }}" alt="photo">
                     </a>
                 </div>
             </div>
             <div class="col-sm-3 mb-2">
                 <div class="img-wrapper">
-                    <a href="{{ asset('images/slika_14.jpg') }}" target="_blank"
-                       title="{{ 'img_title'|trans({}, 'gallery')}}">
-                        <img src="{{ asset('images/slika_14.jpg') }}" alt="photo">
+                    <a href="{{ asset('images/gallery/image_14.jpg') }}" target="_blank"
+                       title="{{ 'img_title'|trans({}, 'gallery') }}">
+                        <img src="{{ asset('images/gallery/image_14.jpg') }}" alt="photo">
                     </a>
                 </div>
             </div>
             <div class="col-sm-3 mb-2">
                 <div class="img-wrapper">
-                    <a href="{{ asset('images/slika_15.jpg') }}" target="_blank"
-                       title="{{ 'img_title'|trans({}, 'gallery')}}">
-                        <img src="{{ asset('images/slika_15.jpg') }}" alt="photo">
+                    <a href="{{ asset('images/gallery/image_15.jpg') }}" target="_blank"
+                       title="{{ 'img_title'|trans({}, 'gallery') }}">
+                        <img src="{{ asset('images/gallery/image_15.jpg') }}" alt="photo">
                     </a>
                 </div>
             </div>
             <div class="col-sm-3 mb-2">
                 <div class="img-wrapper">
-                    <a href="{{ asset('images/slika_16.jpg') }}" target="_blank"
-                       title="{{ 'img_title'|trans({}, 'gallery')}}">
-                        <img src="{{ asset('images/slika_16.jpg') }}" alt="photo">
+                    <a href="{{ asset('images/gallery/image_16.jpg') }}" target="_blank"
+                       title="{{ 'img_title'|trans({}, 'gallery') }}">
+                        <img src="{{ asset('images/gallery/image_16.jpg') }}" alt="photo">
                     </a>
                 </div>
             </div>
             <div class="col-sm-3 mb-2">
                 <div class="img-wrapper">
-                    <a href="{{ asset('images/slika_19.jpg') }}" target="_blank"
-                       title="{{ 'img_title'|trans({}, 'gallery')}}">
-                        <img src="{{ asset('images/slika_19.jpg') }}" alt="photo">
+                    <a href="{{ asset('images/gallery/image_19.jpg') }}" target="_blank"
+                       title="{{ 'img_title'|trans({}, 'gallery') }}">
+                        <img src="{{ asset('images/gallery/image_19.jpg') }}" alt="photo">
                     </a>
                 </div>
             </div>
             <div class="col-sm-3 mb-2">
                 <div class="img-wrapper">
-                    <a href="{{ asset('images/slika_20.jpg') }}" target="_blank"
-                       title="{{ 'img_title'|trans({}, 'gallery')}}">
-                        <img src="{{ asset('images/slika_20.jpg') }}" alt="photo">
+                    <a href="{{ asset('images/gallery/image_20.jpg') }}" target="_blank"
+                       title="{{ 'img_title'|trans({}, 'gallery') }}">
+                        <img src="{{ asset('images/gallery/image_20.jpg') }}" alt="photo">
                     </a>
                 </div>
             </div>
             <div class="col-sm-3 mb-2">
                 <div class="img-wrapper">
-                    <a href="{{ asset('images/slika_32.jpg') }}" target="_blank"
-                       title="{{ 'img_title'|trans({}, 'gallery')}}">
-                        <img src="{{ asset('images/slika_32.jpg') }}" alt="photo">
+                    <a href="{{ asset('images/gallery/image_32.jpg') }}" target="_blank"
+                       title="{{ 'img_title'|trans({}, 'gallery') }}">
+                        <img src="{{ asset('images/gallery/image_32.jpg') }}" alt="photo">
                     </a>
                 </div>
             </div>
             <div class="col-sm-3 mb-2">
                 <div class="img-wrapper">
-                    <a href="{{ asset('images/slika_33.jpg') }}" target="_blank"
-                       title="{{ 'img_title'|trans({}, 'gallery')}}">
-                        <img src="{{ asset('images/slika_33.jpg') }}" alt="photo">
+                    <a href="{{ asset('images/gallery/image_33.jpg') }}" target="_blank"
+                       title="{{ 'img_title'|trans({}, 'gallery') }}">
+                        <img src="{{ asset('images/gallery/image_33.jpg') }}" alt="photo">
                     </a>
                 </div>
             </div>
             <div class="col-sm-3 mb-2">
                 <div class="img-wrapper">
-                    <a href="{{ asset('images/slika_35.jpg') }}" target="_blank"
-                       title="{{ 'img_title'|trans({}, 'gallery')}}">
-                        <img src="{{ asset('images/slika_35.jpg') }}" alt="photo">
+                    <a href="{{ asset('images/gallery/image_35.jpg') }}" target="_blank"
+                       title="{{ 'img_title'|trans({}, 'gallery') }}">
+                        <img src="{{ asset('images/gallery/image_35.jpg') }}" alt="photo">
                     </a>
                 </div>
             </div>
             <div class="col-sm-3 mb-2">
                 <div class="img-wrapper">
-                    <a href="{{ asset('images/slika_44.jpg') }}" target="_blank"
-                       title="{{ 'img_title'|trans({}, 'gallery')}}">
-                        <img src="{{ asset('images/slika_44.jpg') }}" alt="photo">
+                    <a href="{{ asset('images/gallery/image_44.jpg') }}" target="_blank"
+                       title="{{ 'img_title'|trans({}, 'gallery') }}">
+                        <img src="{{ asset('images/gallery/image_44.jpg') }}" alt="photo">
                     </a>
                 </div>
             </div>
             <div class="col-sm-3 mb-2">
                 <div class="img-wrapper">
-                    <a href="{{ asset('images/slika_46.jpg') }}" target="_blank"
-                       title="{{ 'img_title'|trans({}, 'gallery')}}">
-                        <img src="{{ asset('images/slika_46.jpg') }}" alt="photo">
+                    <a href="{{ asset('images/gallery/image_46.jpg') }}" target="_blank"
+                       title="{{ 'img_title'|trans({}, 'gallery') }}">
+                        <img src="{{ asset('images/gallery/image_46.jpg') }}" alt="photo">
                     </a>
                 </div>
             </div>
             <div class="col-sm-3 mb-2">
                 <div class="img-wrapper">
-                    <a href="{{ asset('images/slika_49.jpg') }}" target="_blank"
-                       title="{{ 'img_title'|trans({}, 'gallery')}}">
-                        <img src="{{ asset('images/slika_49.jpg') }}" alt="photo">
+                    <a href="{{ asset('images/gallery/image_49.jpg') }}" target="_blank"
+                       title="{{ 'img_title'|trans({}, 'gallery') }}">
+                        <img src="{{ asset('images/gallery/image_49.jpg') }}" alt="photo">
                     </a>
                 </div>
             </div>

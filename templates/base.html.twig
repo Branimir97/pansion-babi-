@@ -1,194 +1,65 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- FontAwesome -->
-        <script src="https://kit.fontawesome.com/f69451562f.js" crossorigin="anonymous"></script>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
-        </style>
-        <!-- Web icon -->
-        <link rel="icon" href="{{ asset('icons/logo.png') }}">
+<html lang="{{ app.request.locale }}">
+<head>
+    <meta charset="UTF-8">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet"
-              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-              crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-                crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-                crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-                crossorigin="anonymous"></script>
-        <title>
-            {% block title %}{% endblock %}
-        </title>
+    {% block meta %}{% endblock %}
 
-        {% block stylesheets %}{% endblock %}
-        <link rel="stylesheet" href="{{ asset('css/base.css') }}"
-        {% block javascripts %}{% endblock %}
-    </head>
+    {% set host = app.request.schemeAndHttpHost %}
+    {% if app.request.attributes.get('_route') is not same as 'homepage' %}
+        {% set route = app.request.attributes.get('_route') %}
+    {% else %}
+        {% set route = "" %}
+    {% endif %}
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
-                aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand upper" href="{{ path('homepage') }}">
-            <img class="mr-2" id="logo"
-                 src="{{ asset('icons/logo.png') }}" alt="logo">
-            {{ 'navbar-brand'|trans({}, 'navigation')}}
-        </a>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item upper">
-                    <a class="nav-link" href="{{ path('gallery') }}">
-                        {{ 'gallery'|trans({}, 'navigation')}}
-                    </a>
-                </li>
-                <li class="nav-item upper">
-                    <a class="nav-link" href="{{ path('booking') }}">
-                        {{ 'booking'|trans({}, 'navigation')}}
-                    </a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                       role="button" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">
-                        <span class="upper" id="locale">{{ app.request.locale }}</span>
-                        <i id="language_icon" class="fas fa-globe"></i>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                        <li>
-                            <a class="dropdown-item"
-                               href="{{ path(app.request.attributes.get('_route'),
-                                   app.request.attributes.get('_route_params')|merge({'_locale': 'hr'})) }}">
-                                <img class="nav_icon mr-1"
-                                     src="{{ asset('icons/croatia.png') }}" alt="icon">
-                                {{ 'croatian'|trans({}, 'navigation')}}
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item"
-                               href="{{path(app.request.attributes.get('_route'),
-                                   app.request.attributes.get('_route_params')|merge({'_locale': 'en'})) }}">
-                                <img class="nav_icon mr-1"
-                                     src="{{ asset('icons/united-kingdom.png') }}" alt="icon">
-                                {{ 'english'|trans({}, 'navigation')}}
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item"
-                               href="{{path(app.request.attributes.get('_route'),
-                                   app.request.attributes.get('_route_params')|merge({'_locale': 'it'})) }}">
-                                <img class="nav_icon mr-1"
-                                     src="{{ asset('icons/italy.png') }}" alt="icon">
-                                {{ 'italian'|trans({}, 'navigation')}}
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item"
-                               href="{{path(app.request.attributes.get('_route'),
-                                   app.request.attributes.get('_route_params')|merge({'_locale': 'de'})) }}">
-                                <img class="nav_icon mr-1"
-                                     src="{{ asset('icons/germany.png') }}" alt="icon">
-                                {{ 'german'|trans({}, 'navigation')}}
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    {% for message in app.flashes('success') %}
-        <div class="alert alert-success text-center mb-0">
-            {{ message }}
-        </div>
-    {% endfor %}
-    {% for message in app.flashes('danger') %}
-        <div class="alert alert-danger text-center mb-0">
-            {{ message }}
-        </div>
-    {% endfor %}
-    <body>
-        {% block body %}{% endblock %}
-    </body>
-    <footer class="bg-light text-center">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-4 my-auto">
-                    <img src="{{ asset('icons/logo.png') }}" alt="logo"><br>
-                    <i>
-                        {{ 'copyright'|trans({}, 'footer')}}
-                    </i><br>
-                    <div class="icons mt-2 mb-2">
-                        <img id="logo_footer" src="{{ asset('icons/parking.png') }}" alt="logo_parking">
-                        <img id="logo_footer" src="{{ asset('icons/telephone.jpg') }}" alt="logo_telephone">
-                        <img id="logo_footer" src="{{ asset('icons/email.jpeg') }}" alt="logo_email">
-                        <img id="logo_footer" src="{{ asset('icons/wi-fi.jpg') }}" alt="logo_wi-fi">
-                    </div>
-                </div>
-                <div class="col-sm-4 my-auto">
-                    <h3 class="mb-3 heading upper">
-                        {{ 'heading'|trans({}, 'footer')}}
-                    </h3>
-                    <p>
-                        {{ 'telephone'|trans({}, 'footer')}}:
-                        <a href="tel:+385 44 601 756">
-                            +385 44 601 756
-                        </a>
-                    </p>
-                    <p>
-                        {{ 'mobile'|trans({}, 'footer')}}:
-                        <a href="tel:+385 92 2473370">
-                            +385 92 247 3370
-                        </a>
-                        (Mario)
-                    </p>
-                    <p>
-                        {{ 'mobile'|trans({}, 'footer')}}:
-                        <a href="tel:+385 92 2473370">
-                            +385 91 755 8309
-                        </a>
-                        (Vlatka)
-                    </p>
-                    <p>
-                        E-mail: <a href="mailto:pansion.babic@gmail.com">
-                            pansion.babic@gmail.com
-                        </a>
-                    </p>
-                    <div class="icons">
-                        <a href="https://www.facebook.com/profile.php?id=100072567254177"
-                           target="_blank" title="Facebook">
-                            <i class="fab fa-facebook mr-2"></i>
-                        </a>
-{#                        <a href="https://www.instagram.com/pansion_babic.201/"#}
-{#                           target="_blank" title="Instagram">#}
-{#                            <i class="fab fa-instagram"></i>#}
-{#                        </a>#}
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <iframe width="400px" height="300px"
-                            frameborder="0"
-                            scrolling="no"
-                            marginheight="0"
-                            marginwidth="0"
-                            id="gmap_canvas"
-                            src="https://maps.google.com/maps?width=400&amp;height=300&amp;hl=en&amp;q=Kralja%20Tomislava%20201%20Novska+(Pansion%20Babi%C4%87)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-                    <a href='https://www.symptoma.hr/hr/info/covid-19#info'>Coronavirus symptom</a>
-                    <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=128137122405c27b87aa1ac437362debae34e4ca'></script>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <link rel="alternate" href="{{ host }}/hr/{{ route }}" hreflang="hr"/>
+    <link rel="alternate" href="{{ host }}/en/{{ route }}" hreflang="en-gb"/>
+    <link rel="alternate" href="{{ host }}/it/{{ route }}" hreflang="it"/>
+    <link rel="alternate" href="{{ host }}/de/{{ route }}" hreflang="de"/>
+
+    <link rel="canonical" href="{{ host }}/{{ app.request.locale }}/{{ route }}" hreflang="hr"/>
+
+    <script src="https://kit.fontawesome.com/4bb6aa68af.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" href="{{ asset('images/icons/logo.png') }}">
+
+    <link rel="stylesheet" href="{{ asset('css/base.css') }}">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+          crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous">
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+    </style>
+
+    <title>
+        {% block title %}{% endblock %}
+    </title>
+
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+    {% endblock %}
+</head>
+
+{% include 'navigation/nav.html.twig' %}
+
+{% include 'flash_messages/flash_messages.html.twig' %}
+
+<body>
+{% block body %}{% endblock %}
+</body>
+
+{% include 'footer/footer.html.twig' %}
 </html>

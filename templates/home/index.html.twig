@@ -1,7 +1,11 @@
 {% extends 'base.html.twig' %}
 
+{% block meta %}
+    <meta name="description" content="{{ 'homepage'|trans({}, 'meta_description')|raw }}">
+{% endblock %}
+
 {% block title %}
-    {{ 'title'|trans({}, 'homepage')}}
+    {{ 'title'|trans({}, 'homepage') }}
 {% endblock %}
 
 {% block stylesheets %}
@@ -9,15 +13,15 @@
 {% endblock %}
 
 {% block body %}
-        <h1 class="text-center bg-light p-2">
+    <h1 class="text-center bg-light p-2">
             <span class="upper">
-                {{ 'welcome'|trans({}, 'homepage')}}
+                {{ 'welcome'|trans({}, 'homepage') }}
             </span>
-            <img id="logo" src="{{ asset('icons/logo.png') }}" alt="logo">
-        </h1>
-        <div class="container text-center">
-            <div class="img-wrapper">
-                <img src="{{ asset('images/slika_0.jpg') }}" alt="">
-            </div>
+        <img id="logo" src="{{ asset('images/icons/logo.png') }}" alt="logo">
+    </h1>
+    <div class="container text-center">
+        <div class="img-wrapper">
+            <img src="{{ asset('images/gallery/image_0.jpg') }}" alt="">
         </div>
+    </div>
 {% endblock %}

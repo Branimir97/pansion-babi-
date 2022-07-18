@@ -1,0 +1,82 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand upper" href="{{ path('homepage') }}">
+                <img class="mr-2" id="logo"
+                     src="{{ asset('icons/logo.png') }}" alt="logo">
+                {{ 'navbar-brand'|trans({}, 'navigation') }}
+            </a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('gallery') }}">
+                        {{ 'gallery'|trans({}, 'navigation') }}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('booking') }}">
+                        {{ 'booking'|trans({}, 'navigation') }}
+                    </a>
+                </li>
+            </ul>
+            <div class="btn-group">
+                <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                    {% if app.request.locale is same as 'hr' %}
+                        <img class="nav_icon"
+                             src="{{ asset('icons/croatia.png') }}" alt="icon">
+                        {{ 'croatian'|trans({}, 'navigation') }}
+                    {% elseif  app.request.locale is same as 'en' %}
+                        <img class="nav_icon"
+                             src="{{ asset('icons/united-kingdom.png') }}" alt="icon">
+                        {{ 'english'|trans({}, 'navigation') }}
+                    {% elseif  app.request.locale is same as 'it' %}
+                        <img class="nav_icon"
+                             src="{{ asset('icons/italy.png') }}" alt="icon">
+                        {{ 'italian'|trans({}, 'navigation') }}
+                    {% elseif  app.request.locale is same as 'de' %}
+                        <img class="nav_icon"
+                             src="{{ asset('icons/germany.png') }}" alt="icon">
+                        {{ 'german'|trans({}, 'navigation') }}
+                    {% endif %}
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                        <a class="dropdown-item"
+                           href="{{ path(app.request.attributes.get('_route'), {_locale: 'hr'}) }}">
+                            <img class="nav_icon"
+                                 src="{{ asset('icons/croatia.png') }}" alt="icon">
+                            {{ 'croatian'|trans({}, 'navigation') }}
+                        </a>
+                    <li>
+                        <a class="dropdown-item"
+                           href="{{ path(app.request.attributes.get('_route'), {_locale: 'en'}) }}">
+                            <img class="nav_icon"
+                                 src="{{ asset('icons/united-kingdom.png') }}" alt="icon">
+                            {{ 'english'|trans({}, 'navigation') }}
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item"
+                           href="{{ path(app.request.attributes.get('_route'), {_locale: 'it'}) }}">
+                            <img class="nav_icon"
+                                 src="{{ asset('icons/italy.png') }}" alt="icon">
+                            {{ 'italian'|trans({}, 'navigation') }}
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item"
+                           href="{{ path(app.request.attributes.get('_route'), {_locale: 'de'}) }}">
+                            <img class="nav_icon"
+                                 src="{{ asset('icons/germany.png') }}" alt="icon">
+                            {{ 'german'|trans({}, 'navigation') }}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
